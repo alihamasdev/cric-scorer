@@ -1,8 +1,8 @@
 {
-  "name": "CricScorer",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite",
-  "id": "d78f93ed"
+	"name": "CricScorer",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "react-vite",
+	"id": "d78f93ed"
 }

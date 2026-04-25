@@ -1,0 +1,26 @@
+{
+	"plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+	"tabWidth": 2,
+	"useTabs": true,
+	"printWidth": 140,
+	"singleQuote": false,
+	"trailingComma": "all",
+	"jsxSingleQuote": false,
+	"tailwindStylesheet": "src/theme/tailwind.css",
+	"tailwindFunctions": ["cn", "cva"],
+	"importOrder": [
+		"^(react/(.*)$)|^(react$)",
+		"<THIRD_PARTY_MODULES>",
+		"",
+		"",
+		"^@/lib/(.*)$",
+		"^@/types/(.*)$",
+		"^@/hooks/(.*)$",
+		"^@/context/(.*)$",
+		"^@/components/(.*)$",
+		"^@/screens/(.*)$",
+		"",
+		"^~/(.*)$",
+		"^[./]"
+	]
+}

@@ -1,0 +1,10 @@
+ion-toolbar {
+	--border-width: 0;
+	--box-shadow: none;
+	--padding-start: 1rem;
+	--padding-end: 1rem;
+}
+
+ion-header::after {
+	display: none;
+}

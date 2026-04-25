@@ -1,18 +1,17 @@
-/// <reference types="vitest" />
+import { resolve } from "path";
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
-import legacy from '@vitejs/plugin-legacy'
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    legacy()
-  ],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/setupTests.ts',
-  }
-})
+	plugins: [react(), tailwindcss()],
+	resolve: {
+		alias: {
+			"@": resolve(__dirname, "src"),
+		},
+	},
+	server: {
+		host: true,
+		port: 3000,
+	},
+});
